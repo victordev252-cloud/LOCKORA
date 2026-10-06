@@ -30,17 +30,10 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
         with:
-          gradle-version: 8.7
+          gradle-version: wrapper
 
-      - name: Ensure wrapper exists
-        run: |
-          if [ ! -f "./gradlew" ]; then
-            gradle wrapper --gradle-version 8.7
-          fi
-          chmod +x ./gradlew
-
-      - name: List files
-        run: ls -la
+      - name: Show Gradle version
+        run: ./gradlew --version || gradle --version
 
       - name: Build Debug APK
         run: ./gradlew assembleDebug --stacktrace
