@@ -1,0 +1,6 @@
+{
+  "name": "Lockora",
+  "description": "Privacy-first Android App Lock featuring biometric authentication, real foreground detection, tamper defense, and real-time security dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

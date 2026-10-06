@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lockora</string>
+    <string name="accessibility_label">Lockora App Lock</string>
+    <string name="accessibility_description">Monitors foreground app launches to prompt master PIN, password, or biometric authorization before allowing access.</string>
+</resources>
